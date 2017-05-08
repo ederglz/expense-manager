@@ -5,7 +5,7 @@ class ExpenseRow extends React.Component {
 
   render() {
     return(
-      <li className="media d-flex">
+      <li className="container d-flex">
         <ExpenseAvatar picture={this.props.picture} />
         <div className="media-body">
           <h4>{this.props.name}</h4>
@@ -15,7 +15,7 @@ class ExpenseRow extends React.Component {
           </p>
         </div>
         <div className="actions">
-          <span>❌</span>
+          <span role="button">❌</span>
         </div>
       </li>
     )
